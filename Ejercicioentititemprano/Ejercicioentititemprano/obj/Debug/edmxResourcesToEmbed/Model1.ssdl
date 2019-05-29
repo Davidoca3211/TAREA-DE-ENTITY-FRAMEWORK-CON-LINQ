@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EjercicioEntiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Animales">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Especie" Type="nvarchar" MaxLength="255" />
+    <Property Name="Edad" Type="nvarchar" MaxLength="255" />
+    <Property Name="Precio" Type="decimal" Precision="5" Scale="2" />
+  </EntityType>
+  <EntityType Name="Recetas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="255" />
+    <Property Name="Descricion" Type="nvarchar" MaxLength="255" />
+    <Property Name="Tiempo" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityContainer Name="EjercicioEntiModelStoreContainer">
+    <EntitySet Name="Animales" EntityType="Self.Animales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Recetas" EntityType="Self.Recetas" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

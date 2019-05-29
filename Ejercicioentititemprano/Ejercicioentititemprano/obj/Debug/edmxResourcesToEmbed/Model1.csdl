@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EjercicioEntiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Animales">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Especie" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Edad" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Precio" Type="Decimal" Precision="5" Scale="2" />
+  </EntityType>
+  <EntityType Name="Recetas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Descricion" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Tiempo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="EjercicioEntiEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Animales1" EntityType="EjercicioEntiModel.Animales" />
+    <EntitySet Name="Recetas1" EntityType="EjercicioEntiModel.Recetas" />
+  </EntityContainer>
+</Schema>

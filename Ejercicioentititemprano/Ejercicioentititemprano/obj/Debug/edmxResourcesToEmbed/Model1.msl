@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EjercicioEntiModelStoreContainer" CdmEntityContainer="EjercicioEntiEntities">
+    <EntitySetMapping Name="Animales1">
+      <EntityTypeMapping TypeName="EjercicioEntiModel.Animales">
+        <MappingFragment StoreEntitySet="Animales">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Especie" ColumnName="Especie" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Recetas1">
+      <EntityTypeMapping TypeName="EjercicioEntiModel.Recetas">
+        <MappingFragment StoreEntitySet="Recetas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Descricion" ColumnName="Descricion" />
+          <ScalarProperty Name="Tiempo" ColumnName="Tiempo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
